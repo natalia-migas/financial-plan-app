@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/btsp-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Financial Plan Application</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="text-center">Simple Financial Plan Application</h1>
+      <div class="container">
+        <div class="row content">
+          <div class="col-md-3 forms">
+            <form id="incomesForm" class="border border-success rounded">
+              <label for="titleIncInput">Title:</label>
+              <input
+                type="text"
+                class="form-control title"
+                id="titleIncInput"
+              />
+              <label for="incomesInput">Income: ($)</label>
+              <input
+                type="number"
+                class="form-control amount"
+                id="incomesInput"
+              />
+              <button type="submit" class="btn btn-primary">Add income</button>
+            </form>
+            <form id="expensesForm" class="border border-danger rounded">
+              <label for="titleExpInput">Title:</label>
+              <input
+                type="text"
+                class="form-control title"
+                id="titleExpInput"
+              />
+              <label for="expensesInput">Expense: ($)</label>
+              <input
+                type="number"
+                class="form-control amount"
+                id="expensesInput"
+              />
+              <button type="submit" class="btn btn-primary">Add Expense</button>
+            </form>
+          </div>
+          <div class="col-md-8 board">
+            <div class="row">
+              <div class="col-md-4 box-wrapper incomes">
+                <i class="fas fa-dollar-sign text-success"></i>
+                <h2 class="text-success">Incomes</h2>
+                <p class="text-success">1000 $</p>
+              </div>
+              <div class="col-md-4 box-wrapper expenses">
+                <i class="fas fa-hand-holding-usd text-danger"></i>
+                <h2 class="text-danger">Expenses</h2>
+                <p class="text-danger">400 $</p>
+              </div>
+              <div class="col-md-3 box-wrapper balance">
+                <i class="fas fa-balance-scale"></i>
+                <h2>Balance</h2>
+                <p class="font-weight-bold text-success">600 $</p>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-md-6">
+                <h4>Incomes list</h4>
+                <table class="table incomes-list">
+                  <thead>
+                    <tr>
+                      <th class="table-success text-dark">#</th>
+                      <th class="table-success text-dark">Income Title</th>
+                      <th class="table-success text-dark">Income Value</th>
+                      <th class="table-success text-dark">Edit</th>
+                      <th class="table-success text-dark">Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+              <div class="col-md-6">
+                <h4>Expenses list</h4>
+                <table class="table expenses-list">
+                  <thead>
+                    <tr>
+                      <th class="table-danger text-dark">#</th>
+                      <th class="table-danger text-dark">Expense Title</th>
+                      <th class="table-danger text-dark">Expense Value</th>
+                      <th class="table-danger text-dark">Edit</th>
+                      <th class="table-danger text-dark">Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="text-center">
+        2019 &copy; Natalia Migas. All rights reserved. Bootstrap theme by
+        creative-tim
+      </p>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

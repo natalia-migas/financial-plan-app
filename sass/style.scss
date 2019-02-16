@@ -1,0 +1,52 @@
+main {
+  min-height: calc(100vh - 70px);
+  padding-top: 50px;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 80px;
+}
+
+form {
+  margin-bottom: 20px;
+  padding: 15px;
+  .form-control {
+    margin-bottom: 20px;
+  }
+}
+
+.box-wrapper {
+  text-align: center;
+  i {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 30px;
+  }
+}
+
+table {
+  i {
+    cursor: pointer;
+  }
+}
+
+.alert-danger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 15px 35px;
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    font-weight: normal;
+    font-size: 30px;
+  }
+}
+
+footer {
+  height: 70px;
+}
